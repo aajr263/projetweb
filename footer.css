@@ -1,0 +1,51 @@
+footer ul li:hover{
+        cursor: pointer;
+        text-decoration:underline ;
+    }
+footer{
+        background-image: linear-gradient(to right,rgb(243, 234, 113),rgb(7, 32, 7));
+        font-size: 20px;
+        height: 100px;
+}
+footer ul{
+        display: flex;
+        gap: 20px;
+        justify-content: end;
+        margin-right: 100px;
+        margin-top: -25px;
+        margin-left: 1100PX;
+}   
+footer ul li{
+     list-style: none;
+}
+footer ul li img{
+        max-width: 45px;
+        border-radius: 25%;
+        margin-top: 25px;
+        position: relative;
+        left: 60px;
+}
+#insta{
+        max-width: 35px;
+}
+footer h2{
+        margin-left: 70%;
+        color: #fff;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25px;
+       position: relative;
+       top: 30px;
+}
+h6{
+        width: 70%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        color: rgb(78, 80, 75);
+        position: relative;
+        bottom: 30px;
+        text-align: left;
+}
+.foot{
+        position: relative;
+        top: 7px;
+}

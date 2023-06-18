@@ -2,166 +2,54 @@ body{
     padding: 0px;
     margin: 0px;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    background-image: linear-gradient(to right,rgb(243, 234, 113),rgb(7, 32, 7));
-    width:100%;
-    height: 150px;
-}
-#logo p{ 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
-    color: #fff;
-    margin-top: 0px;
-    position: relative;
-    bottom:  120px;
-    left: 120px;
-    text-shadow: 0 0 3px #034d22;
-}
-input[type="search"]{
-    height: 30px;
-    position: relative;
-    bottom: -40px;
-    margin-top: 120px;
-    border-radius: 15px 0px 0px 15px;
-    z-index: 1;
-}
-input[type="submit"]{
-    height: 30px;
-    position: relative;
-    bottom: -40px;
-    left: -50px;
-    margin-top: 120px;
-    border-radius: 0px 15px 15px 0px;
-    z-index: 1;
-}
-#logo img{
-    max-width:160px;
-    border-radius: 50%;
-    margin-top: -20px; 
-}
-#menu{
-    margin-left: 80px;
-}
-#menu ul{
-    display:flex;
-    gap: 30px;
-}
-#menu ul li{
-    list-style: none;
-    display: inline-block;
-}
-#menu ul li a{
-    display: block;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
-    text-transform: capitalizes;
-    letter-spacing: normal;
-    color: #fff; 
-    font-weight: 600;
-    padding: 25px;
-    transition: all ease 0.5%;
-}
-#menu ul li a:hover{
-    background-color: #997616;
-}
-
-footer ul li:hover{
-    cursor: pointer;
-    text-decoration:underline ;
-}
-footer{
-    background-color: gray;
-    font-size: 20px;
-    height: 100px;
-    position: relative;
-
-}
-footer ul{
-display: flex;
-gap: 20px;
-justify-content: end;
-margin: -60px 20px;
-margin-left: 1100px;
-}
-footer ul li{
-list-style: none;
-}
-footer ul li img{
-    max-width: 45px;
-    border-radius: 25%;
-}
-#insta{
-    max-width: 35px;
-}
-footer h2{
-    margin-left: 76%;
-    color: #fff;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-}
-marquee{
-    width: 70%;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    color: whitesmoke;
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;  
 }
 .page1{
     width: 100%;
-    height: 1500px;
-    background-image:url("image/affiche.png");
+    height: 800px;
+    background-image:url("image/2GROUP.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: -50px 0px;
 }
-h1 marquee{
-    text-align: center;
-    font-size: 90px;
+.bod{
+    font-size: 60px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(252, 251, 249) ;
-    padding: 150px;
+    padding: 170px;
     text-shadow: 0 0 10px #034d22;
-}
-.tableau table tr th{ 
-    border: 5px #0a522a solid;
-    border-radius: 20px;
-    font-size:25px ;
-    color: #888605;
-    background-color: #b9cfb9;
-}
-.tableau table tr th img{
-    max-width: 65%;
-    border-radius:10%;
+    position: relative;
+    left: 80px;
 }
 
-.tableau table tr th h4{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #070707;
-    font-size:20px ;
-}
-h1{
+ h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 80px;
     color: #888605;
-    font-size: 40px;
+    font-size: 40px; 
 }
 .page2 h3{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     color: #306e4c;
     font-size: 35px;
+    margin-top: 50px;
 }
 .page2 p{
     font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-left: 10px;
+    margin-top: 20px;
 }
 .page3 p{
     font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-left: 10px;
+    margin-top:20px ;
 }
 h5{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -175,33 +63,89 @@ h5{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 25px;
     color: rgb(85, 37, 9);
-    background-image: linear-gradient(to right,#dcf5a2,rgb(4, 68, 4));
+    background-color:rgba(138, 250, 9, 0.3);
     border-color: #2e1f02;
     border-radius: 10px;
 }
 
-button a{
+.bout button a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    color: #997616;
-}
-button{
-    position: relative;
-    left: 600px;
-    top: -100px;
+    font-size: 30px;
+    color: #e2e8e7;
+    background-color: #273e05;
+    text-decoration: none;
 
+}
+.bout button{
+    margin-left: 600px;
+    margin-top: 100px;
+    margin-bottom: 100px;
    
 }
 video{
     position: relative;
     bottom: 200px;
-    left: 450px;
+    left: 350px;
+    margin-top: 70px;
 }
 h5{
    position: relative;
    bottom:200px ;
+  margin-top: 70px;
 }
 .page4{
     position: relative;
     bottom: 200px;
+    margin-top: 60px ;
+}
+.content { 
+    background: #faf9f9;
+}
+
+ .content .cards {
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content .cards .card {
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    background: rgba(68, 248, 13, 0.2);
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card img{
+    width: 50%;
+   border-radius:10%;
+   margin-top: 10px;
+}
+.card h3{
+  text-align: center;
+  background-color: #5ea615;
+  margin-top: -20px; 
+  font-size: 30px;
+  border-radius: 20px;
+  color: #faf9f9;
+ 
+}
+.card p{
+    text-align: center;
+    font-size: 20px;
+   
+}
+.card h4{
+    text-align: center;
+    font-size: 20px;
+}
+
+ .card .genie h3{
+    position: relative;
+    bottom: 50px ;
 }

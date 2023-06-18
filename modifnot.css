@@ -1,0 +1,147 @@
+* {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        box-sizing: border-box;
+}
+body {  
+        background-size: cover;
+        min-height: 600px;
+        font-family: "Helvetica Neue", sans-serif;
+        background-image: url("./image/flou.jpg");
+       
+}
+.boutt button{
+        font-size:20px ;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #076933;
+        margin: 50px;
+}
+.boutt button{
+        position: relative;
+        left: 150px;
+        top: 50px;
+        margin-bottom: 80px;
+}
+.contactez-nous {
+        width: 800px;
+        border:1px solid#dfddd8;
+        border-radius: 8px;
+        padding: 0 50px 0 50px;   
+        background-color: rgba(120, 244, 78, 0.5);
+        margin-left: 25.6%;
+        position: absolute;
+        top: 50px;
+        
+} 
+.contactez-nous > h1 {
+        font-weight: 500;
+        
+    }
+    form div {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        min-height: 83px;
+        margin-top: 25px;
+    }  
+    form div > label {
+        margin-bottom: 7px;
+        font-weight: 600;
+    }
+    form div > input, form div > select, form div > textarea {
+        background :rgba(211, 250, 157, 0.6);
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: Montserrat, "sans-serif";
+        box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+    }
+    form div > input, form div > select {
+        height: 50px;
+        padding-left: 10px;
+    }
+    form div > select {
+        appearance: none;
+        background-size: 15px;
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIxMy4zMzMgMjEzLjMzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjAsNTMuMzMzIDEwNi42NjcsMTYwIDIxMy4zMzMsNTMuMzMzICAgIiBmaWxsPSIjMzAzMDMwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BvbHlnb24+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==');
+        background-position: right 10px top 50%;
+        background-repeat: no-repeat;
+    }
+    form div > textarea {
+        height: 195px;
+        padding: 15px 0px 0px 10px;
+    }
+    form div > input::placeholder, form div > textarea::placeholder {
+        color: rgb(4, 4, 4);
+    }
+    form div > select:invalid {
+        color: rgb(8, 8, 8);
+    }
+    form div > select option {
+        background: white;
+        color: #303030;
+    }
+    form div:last-child {
+        align-items:center;
+        margin-top: 20px;
+    }
+    form button {
+        width: 200px;
+        max-width: 500px;
+        height: 60px;
+        font-weight: 700;
+        font-size: 28px;
+        background: white;
+        border: rgba(48, 48, 48, 0.5) solid 1px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+        color: #303030;
+        margin-right: 160%;
+        margin-bottom: 20%;
+    }
+section{
+       font-family: Montserrat, "sans-serif";
+       font-weight: 900;
+       margin-top: 10px;
+       margin-left: 6px;
+           
+}
+.niv{
+        position: absolute;
+        left: 50%;
+        bottom:87.4% ;
+       top: 4px;
+}
+.fil{
+        position: absolute;
+        left: 50%;
+        bottom: 71.4%;
+        top: 110px;
+}
+.mat{
+        position: absolute;
+        left: 50%;
+        bottom: 51.4%;
+        top: 220px;
+}
+.cred{
+    position: absolute;
+    left: 50%;
+}
+#logo p{ 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 13px;
+        color: #0d0d0d;
+        margin-top: 0px;
+        position: absolute;
+        bottom:  580px; 
+        left: 130px;
+        text-shadow: 0 0 3px #c0eb33;
+    }
+#logo img{
+        max-width:160px;
+        border-radius: 50%;
+        margin-top: 20px;  
+}

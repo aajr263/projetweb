@@ -6,148 +6,18 @@
 body {  
     background-size: cover;
     width:100%;
-    height: 400px;
-
-    
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    background-image: linear-gradient(to right,rgb(243, 234, 113),rgb(7, 32, 7));
-    width:100%;
-    height: 150px;
-   
-}
-#logo p{ 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    color: #fff;
-    margin-top: 0px;
-    position: relative;
-    bottom:  120px;
-    left: 120px;
-    text-shadow: 0 0 3px #034d22;
-
+    background-color: rgba(155, 210, 97, 0.5);
 }
 
-input[type="search"]{
-    height: 30px;
-    position: relative;
-    bottom: -40px;
-    margin-top: 80px;
-    border-radius: 15px 0px 0px 15px;
-    z-index: 1;
-}
-input[type="submit"]{
-    height: 30px;
-    position: relative;
-    bottom: -40px;
-    left: -50px;
-    margin-top: 80px;
-    border-radius: 0px 15px 15px 0px;
-    z-index: 1;
-}
-#logo img{
-    max-width:160px;
-    border-radius: 50%;
-    margin-top: -20px; 
-}
-nav {
-    text-align: center;
-}
-.menu {
-    display: inline-block;
-}
-.menu > li {
-    float: left;
-    color: #f5f0f5;
-    width: 140px;
-    height: 40px;
-    line-height: 40px;
-    cursor: pointer;
-    font-size: 17px;
-   position: relative;
-   right: 60px;
-}
-.sub-menu {
-    transform: scale(0);
-    transform-origin: top center;
-    transition: all 300ms ease-in-out;
-}
-.sub-menu li {
-    font-size: 14px;
-    background: rgba(32, 48, 24, 0.7);
-    padding: 8px 0;
-    color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    transform: scale(0);
-    transform-origin: top center;
-    transition: all 300ms ease-in-out;
-}
-.sub-menu li a{
-    color: #fff;
-}
-.sub-menu li:last-child {
-    border-bottom: 0;
-}
-.sub-menu li:hover {
-    background: rgb(52, 53, 52);
-}
-.menu > li:hover .sub-menu li {
-    transform: scale(1);
-}
-.menu > li:hover .sub-menu {
-    transform: scale(1);
-}
-.deroulant > a:after{
-    content: '❯';
-    font-size: 15px;
-    margin-left: 2px;
-    display: inline-block;
-}
-.deroulant a{
-    color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    text-decoration: none;
-}
-@keyframes rotationFleche {
-    0% {
-      transform: rotate(0deg);
-    }
-    100%{
-      transform: rotate(90deg);
-    }
-}
-.deroulant:hover > a:after{
-    animation: rotationFleche 0.2s linear forwards;
-}
-@keyframes apparitionSousmenu{
-    0% {
-      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
-      border-top: 3px solid #2169EC;
-    }
-    30% {
-      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
-    }
-    100% {
-      max-height: 50em;
-      border-top: 3px solid #2169EC;
-      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
-    }
-}
-.deroulant:hover > .sub-menu{
-    animation: apparitionSousmenu 1s forwards;
-}
-  @keyframes anim{
+   @keyframes anim{
     0%{ 
-        background-image: url("image/photos.jpg");
+        background-image: url("image/groupe.jpg");
     }
     50%{
-        background-image: url("image/photoA.jpg");
+        background-image: url("image/garc\ diplo.jpg");
     }
     100%{
-        background-image: url("image/ampoule.jpg");
+        background-image: url("image/photofem.jpg");
     }
     
   }
@@ -165,68 +35,31 @@ nav {
     padding-top: 300px;
     font-size: 45px;
     color: #fff;
-    text-shadow: 0 0 20px #01160a; 
-}
-footer ul li:hover{
-    cursor: pointer;
-    text-decoration:underline ;
-}
-footer{
-    background-color: gray;
-    font-size: 20px;
-    height: 100px;
-    margin-top: -60px;
-}
-footer ul{
-    display: flex;
-    gap: 20px;
-    justify-content: end;
-    margin-right: 100px;
-    margin-top: -35px;
-    margin-left: 1100PX;
-}   
-footer ul li{
- list-style: none;
-}
-footer ul li img{
-    max-width: 45px;
-    border-radius: 25%;
-    margin-top: -50px;
-}
-#insta{
-    max-width: 35px;
-}
-footer h2{
-    margin-left: 76%;
-    color: #fff;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-}
-marquee{
-    width: 70%;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    color: whitesmoke;
-    position: relative;
-    bottom: 100px;
+    text-shadow: 0 0 20px #01160a;
+    /* z-index: 1;  */
+     
 }
 
-button{
-    font-size:20px ;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #076933;
-    margin: 50px;
+
+
+.defiler button{
+   justify-content: center;
+   margin-top: 10%;
+   border-radius: 5px;
+   background-color: #afe889;
+   width: 18%;
+   height:18% ;
+
 }
-button a{
+.defiler button a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    color: #997616;
-
-
-}
-button{
+    font-size: 30px;
+    color: #090909;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
     position: relative;
-    left: 300px;
-    top: 25px;
-    margin-bottom: 20px;
+    bottom: 5px;
+   
 }
