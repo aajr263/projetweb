@@ -1,6 +1,14 @@
-body{
-    padding: 0px;
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;  
+}
+body {  
+    background-size: cover;
+    width:100%;
+    height: 400px;
+
+    
 }
 header{
     display: flex;
@@ -43,36 +51,93 @@ input[type="submit"]{
     max-width:160px;
     border-radius: 50%;
     margin-top: -20px; 
-    
-
 }
-#menu{
-    margin-left: 80px;
+nav {
+    text-align: center;
 }
-#menu ul{
-    display:flex;
-    gap: 30px;
-}
-#menu ul li{
-    list-style: none;
+.menu {
     display: inline-block;
 }
-#menu ul li a{
-    display: block;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
-    text-transform: capitalizes;
-    letter-spacing: normal;
-    color: #fff; 
-    font-weight: 600;
-    padding: 25px;
-    transition: all ease 0.5%;
-
-
+.menu > li {
+    float: left;
+    color: #f5f0f5;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 17px;
+   position: relative;
+   right: 60px;
 }
-#menu ul li a:hover{
-    background-color: #997616;
-
+.sub-menu {
+    transform: scale(0);
+    transform-origin: top center;
+    transition: all 300ms ease-in-out;
+}
+.sub-menu li {
+    font-size: 14px;
+    background: rgba(32, 48, 24, 0.7);
+    padding: 8px 0;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transform: scale(0);
+    transform-origin: top center;
+    transition: all 300ms ease-in-out;
+}
+.sub-menu li a{
+    color: #fff;
+}
+.sub-menu li:last-child {
+    border-bottom: 0;
+}
+.sub-menu li:hover {
+    background: rgb(52, 53, 52);
+}
+.menu > li:hover .sub-menu li {
+    transform: scale(1);
+}
+.menu > li:hover .sub-menu {
+    transform: scale(1);
+}
+.deroulant > a:after{
+    content: '❯';
+    font-size: 15px;
+    margin-left: 2px;
+    display: inline-block;
+}
+.deroulant a{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+@keyframes rotationFleche {
+    0% {
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(90deg);
+    }
+}
+.deroulant:hover > a:after{
+    animation: rotationFleche 0.2s linear forwards;
+}
+@keyframes apparitionSousmenu{
+    0% {
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
+      border-top: 3px solid #2169EC;
+    }
+    30% {
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+    }
+    100% {
+      max-height: 50em;
+      border-top: 3px solid #2169EC;
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+    }
+}
+.deroulant:hover > .sub-menu{
+    animation: apparitionSousmenu 1s forwards;
 }
   @keyframes anim{
     0%{ 
@@ -86,7 +151,7 @@ input[type="submit"]{
     }
     
   }
-  .defiler{
+.defiler{
     animation-name: anim;
     animation-duration: 30s;
     animation-iteration-count: infinite;
@@ -100,10 +165,8 @@ input[type="submit"]{
     padding-top: 300px;
     font-size: 45px;
     color: #fff;
-    text-shadow: 0 0 20px #01160a;
-
+    text-shadow: 0 0 20px #01160a; 
 }
-
 footer ul li:hover{
     cursor: pointer;
     text-decoration:underline ;
@@ -115,16 +178,15 @@ footer{
     margin-top: -60px;
 }
 footer ul{
-display: flex;
-gap: 20px;
-justify-content: end;
-margin-right: 100px;
-margin-top: -35px;
-margin-left: 1100PX;
-}
-    
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    margin-right: 100px;
+    margin-top: -35px;
+    margin-left: 1100PX;
+}   
 footer ul li{
-list-style: none;
+ list-style: none;
 }
 footer ul li img{
     max-width: 45px;
